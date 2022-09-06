@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Cadastro de endereço</h1>
+    </section>
+
+    <form>
+
+        <label for="cep">
+            Informe o seu CEP
+            <input type="text" minlength="0" maxlength="8" required placeholder="Coloque aqui o seu CEP">
+        </label>
+        
+
+        <label for="logradoro">
+            Logradoro
+            <input type="text" id="logradoro" placeholder="logradoro">
+        </label>
+
+
+        <label for="Numero">
+            Numero da residência:
+            <input type="number" min="0" required placeholder="numero"> 
+        </label>
+        
+        <label for="bairro">
+            Bairro
+            <input type="text" id="bairro" minlength="3" required placeholder="bairro">
+        </label>
+        
+
+        <label for="cidade">
+            Cidade
+            <select id="cidade" required> 
+                <option>Fortaleza</option>
+                <option>Caucaia</option>
+                <option>Jurema</option>
+                <option>Pecem</option>
+            </select>
+        </label>
+        
+
+        <label for="uf">
+            UF
+            <input type="text" id="uf" minlength="2" required placeholder="UF">
+        </label>
+        
+        <input type="submit" value="Enviar cadastro" id="button">
+
+    </form>
+
+
+
+
+</body>
+</html>
